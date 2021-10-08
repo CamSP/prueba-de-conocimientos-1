@@ -1,0 +1,345 @@
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: "henriette";
+    src: url('./fonts/HenrietteBold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "bs";
+    src: url('./fonts/basicsanssf.ttf');
+}
+
+@font-face {
+    font-family: "bsb";
+    src: url('./fonts/basicsanssfbold.ttf');
+    font-weight: bold;
+}
+
+h1{
+    font-family: henriette;
+    margin: 0px;
+    font-size: 54px;
+}
+
+h2{
+    font-family: henriette;
+    color: #545871;
+    margin: 0px;
+    font-size: 48px;
+}
+
+h3{
+    font-family: henriette;
+    color: #545871;
+    margin: 0px;
+    font-size: 36px;
+}
+
+h4{
+    font-family: henriette;
+    color: #545871;
+    margin: 0px;
+    font-size: 24px;
+}
+
+p{
+    font-family: bs;
+    margin: 0px;
+    font-size: 24px;
+}
+
+button{
+    width: 256px;
+    height: 56px;
+    border-radius: 28px;
+    font-family: "bs";
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#profile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background-image: url("./images/bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+#introduction{
+    color: white;
+    width: 417px;
+    margin: 63px 128px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#navigation{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
+}
+
+
+
+.navigation-button{
+    background: transparent;
+    width: auto;
+    color: white;
+}
+
+#profile-visit-btn{
+    background: white;
+    margin-bottom: 120px;
+}
+
+#profile-visit-btn:hover{
+    background: #DADBE6;
+}
+
+
+#logo-name{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 64px;
+    align-items: center;
+    
+}
+
+#logo-name-ozzi{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 63px 128px;
+}
+
+#logo-name-ozzi p{
+    color: white;
+}
+
+#name{
+    margin-left: 15px;
+    color: white;
+}
+
+#pets{
+    background: #545871;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 107px;
+    padding-bottom: 112px;
+}
+
+#pets-gallery{
+    background: #545871;
+    width: 1152px;
+    height: 520px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 64px;
+}
+
+#pets-title{
+    color: white;
+    margin-bottom: 30px;
+    font-family: henriette;
+    font-size: 48px;
+}
+
+.pets-card{
+    background: white;
+    margin-top: 63px;
+    padding: 32px;
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    border-radius: 9px;
+}
+
+.pets-card img{
+    height: 160px;
+}
+
+.pets-card div{
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pets-card p{
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+#read-reviews{
+    margin-top: 45px;
+    color: #545871;
+    width: 256px;
+    height: 56px;
+    border-radius: 28px;
+    background: #EBD0CE;
+    font-family: "bs";
+    font-size: 20px;
+}
+
+#read-reviews:hover{
+    background: #DADBE6;
+}
+
+
+
+#expert{
+    background: white;
+    width: 100%;
+    padding: 112px 0px 109px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#services{
+    background: #F7ECEB;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#services-sidebar{
+    width: 51%;
+}
+
+#services-text-box{
+    width: 415px;
+    height: 461px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#expert-text-box{
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.schedule-visit{
+    color: white;
+    background: #545871;
+    margin-bottom: 10px;
+}
+
+.schedule-visit:hover{
+    background: #DADBE6;
+    color: #545871;
+}
+
+#contact{
+    width:100%;
+    background: #F7ECEB;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 118px;
+    padding-bottom: 150px
+}
+
+#contact>*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#contact-title{
+    opacity: 0.3;
+    color: #545871;
+}
+
+#options{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+#options-gallery{
+    width: 1248px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 115px;
+    margin-bottom: 70px;
+}
+
+
+#options-title{
+    width: 726px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.icon{
+    transform: translateY(-50px);
+}
+
+
+#phone{
+    color: #545871;
+    text-decoration: none;
+}
+#email{
+    color: #545871;
+}
+
+.option{
+    width: 352px;
+    border: 1px solid #DADBE6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.option p{
+    width: 223px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.price{
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F0F1F7;
+    text-align: center;
+}
