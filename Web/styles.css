@@ -107,7 +107,7 @@ button:hover{
     height: 100%;
     overflow: hidden;
     justify-content: space-around;
-    background-image: url("./images/bg.png");
+    background-image: url("./images/bg.webp");
     background-size: cover;
     background-position: center center;
     color: white;
