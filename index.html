@@ -8,16 +8,24 @@
     <body>
         <header></header>
 
-        <div id="profile">
-            <div id="logo-name-ozzi">
-                <div id="logo-name">
-                    <img src="./images/logo.png" alt="logo">
+        <!--Primera sección-->
+        <div id="profile" class="flex-h">
+
+            <!--Se crea  una división para el logo, nombre de la marca, y nombre del perro-->
+            <div id="logo-name-ozzi" class="flex-v">
+                <!--Div para logo y nombre de la marca-->
+                <!--Flex horizontal-->
+                <div id="logo-name" class="flex-h">
+                    <img src="./images/logo.png" alt="logo" id="logo">
                     <p id="name">PAWTASTIC</p>
                 </div>
                 <p>Ozzie in Brooklyn</p>
             </div>
-            <div id="introduction">
-                <div id="navigation">
+
+            <!--Se coloca un div que contiene los botones de navegación, el titulo y el boton para agendar visitas-->
+            <div id="introduction"  class="flex-v">
+                <!--Div para los botones de navegación-->
+                <div id="navigation" class="flex-h">
                     <button class="navigation-button">About us</button>
                     <button class="navigation-button">Reviews</button>
                     <button class="navigation-button">Services</button>
@@ -27,106 +35,126 @@
                     your furry little 
                     loved ones while 
                     you’re away</h1>
-                <button id="profile-visit-btn">Schedule a visit</button>
+                <button id="profile-visit-btn" class="white-btn">Schedule a visit</button>
             </div>
         </div>
-        <div id="expert">
-            <div id="expert-text-box">
+
+
+        <!--Segunda sección-->
+        <div id="expert" class="flex-h">
+            <!--Se crea un div que contiene el texto de la diapositiva y el boton para agendar visitas-->
+            <div id="expert-text-box"  class="flex-v">
                 <h2>Expert care for your furry, feathery,  or scaley friend</h2>
                 <p>We know how stressful it is to leave your pets at home alone. We’re a team of experienced animal caregivers, 
                     well connected to local veterinarians. Trust to us to love them like our own, and to keep them safe and happy till you’re home.</p>
-                <button class="schedule-visit">Schedule a visit</button>
+                <button>Schedule a visit</button>
             </div>
             <img src="./images/Componente 4.png" alt="expert-img">
         </div>
-        <div id="services">
-            <img src="./images/bg-1.png" alt="services-sidebar" id="services-sidebar">
-            <div id="services-text-box">
+
+
+        <!--Tercera sección-->
+        <div id="services" class="flex-h">
+            <!--División que contiene la imagen y el nombre del perro y su dueña-->
+            <div  id="services-sidebar">
+                <img src="./images/bg-1.png" alt="services-image" id="services-image">
+                <p id="ollie">Ollie and Maggie</p>
+            </div>
+
+            <!--División que contiene el texto y boton de agendamiento-->
+            <div id="services-text-box" class="flex-v">
                 <h2>Services tailored to your needs</h2>
                 <p>Schedule one-off or recurring home visits. An experienced member of our team will spend time with your pet, feed them, 
                     change cat litter trays, take the dog for a walk, and anything else you need.</p>
-                <button class="schedule-visit">Schedule a visit</button>
+                <button>Schedule a visit</button>
             </div>
         </div>
-        <div id="pets">
+
+
+        <!--Cuarta sección-->
+        <div id="pets"  class="flex-v">
             <h2 id="pets-title">Pets (and their humans) love us</h2>
+            <!--La galleria de mascotas se realiza con una cuadricula de 2x2-->
             <div id="pets-gallery">
-                <div class="pets-card">
+                <!--Se crea una división para cada mascota-->
+                <div class="flex-h pets-card">
                     <img src="./images/lindsay.png" alt="lindsay">
-                    <div>
+                    <div class="flex-v">
                         <h4>Lindsay M.</h4>
                         <p>Pawtastic is awesome! They are passionate about pets and employ trustworthy, dependable staff. We love them!”</p>
                     </div>
                 </div>
-                <div class="pets-card">
+                <div class="flex-h pets-card" >
                     <img src="./images/floof.png" alt="floof">
-                    <div>
+                    <div class="flex-v">
                         <h4>Andrew C.</h4>
                         <p>I’m a repeat customer because of their amazing care for our two cats when we travel. I can relax because I know they’re there!”</p>
                     </div>
                 </div>
-                <div class="pets-card">
+                <div class="flex-h pets-card" >
                     <img src="./images/ginger.png" alt="ginger">
-                    <div>
+                    <div class="flex-v">
                         <h4>Meg F.</h4>
                         <p>I use them for mid day walks and our babies are so happy with the exercise and love during the day. We see the difference!”</p>
                     </div>
                 </div>
-                <div class="pets-card">
+                <div class="flex-h pets-card" >
                     <img src="./images/ned.png" alt="ned">
-                    <div>
+                    <div class="flex-v">
                         <h4>Jackie B.</h4>
                         <p>I just returned from two weeks away to a sociable, calm cat and no drama. Thanks for a great job, Pawtastic!”</p>
                     </div>
                 </div>
             </div>
-            <button id="read-reviews">Read all reviews</button>
+            <button id="read-reviews" class="pink-btn">Read all reviews</button>
         </div>
-        <div id="options">
+
+        <!--Quinta sección-->
+        <div id="options" class="flex-v">
             <h2 id="options-title">Affodable options, <br> tailored to your needs</h2>
             <p id="options-descripton">All services include live updates including photos and chat, <br>  
                 as well as notifications of sitter arrival and departure times.</p>
 
-            <div id="options-gallery">
-                <div class="option">
+            <!--Para cada opción se crea su respectiva tarjeta-->
+            <div id="options-gallery" class="flex-h">
+                <!--La tarjeta contiene el icono, el texto, y la caja de precio-->
+                <div class="flex-v option-card">
                     <img src="./images/flor.png" alt="flor" class="icon"> 
                     <h2>Dog walk</h2>
                     <p>We’ll take your pup for a 30 minute walk and make sure he or she has fresh food and water.</p>
-                    <di class="price">
+                    <di class="flex-v price">
                         <h2>$15</h2>
                         <p>PER 30 MIN WALK</p>
                     </di>
                 </div>
-                <div class="option">
+                <div class="flex-v option-card">
                     <img src="./images/wave.png" alt="wave" class="icon"> 
                     <h2>Drop-in visit</h2>
                     <p>We’ll stop by to snuggle, feed, and play with your pets in the comfort of their own home.</p>
-                    <di class="price">
+                    <di class="flex-v price">
                         <h2>$15</h2>
                         <p>PER 30 MIN VISIT</p>
                     </di>
                 </div>
-                <div class="option">
+                <div class="flex-v option-card">
                     <img src="./images/home.png" alt="home" class="icon"> 
                     <h2>House sitting</h2>
                     <p>We’ll stay overnight with your pets to make sure they have round-the-clock love.</p>
-                    <div class="price"> 
+                    <div class="flex-v price"> 
                         <h2>$45</h2>
                         <p>PER NIGHT</p>
                     </div>
                 </div>
             </div>
-            <button class="schedule-visit">Schedule a service</button>
+            <button>Schedule a service</button>
         </div>
 
+        <!--Sexta sección-->
         <div id="contact">
+            <!--Se añade el titulo de contacto, y los hipervinculos del telefono y correo-->
             <h2 id="contact-title">Contact</h2>
-            <h2><a href="tel:481-624-3240" data-type="phone" id="phone">481-624-3240</a></h2>
+            <h2><a href="tel:481-624-3240" data-type="phone" id="phone"><u>481-624-3240</u></a></h2>
             <h2><a href="mailto:test@test.com" data-type="email" id="email">Email us</a></h2>
-        </div>
-        <footer>
-
-        </footer>
-        
+        </div>        
     </body>
 </html>

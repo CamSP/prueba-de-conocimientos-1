@@ -4,16 +4,18 @@ html, body{
     height: 100%;
 }
 
+/*Importación de fuentes*/
 @font-face {
     font-family: "henriette";
-    src: url('./fonts/HenrietteBold.otf');
-    font-weight: bold;
+    src: url("./fonts/HenrietteBold.otf"); 
 }
 
 @font-face {
     font-family: "bs";
-    src: url('./fonts/basicsanssf.ttf');
-}
+    src: url("./fonts/basicsanssf.ttf"); 
+    
+} 
+
 
 @font-face {
     font-family: "bsb";
@@ -21,39 +23,61 @@ html, body{
     font-weight: bold;
 }
 
+
+/*Estilos generales para texto*/
 h1{
     font-family: henriette;
-    margin: 0px;
+    margin:0;
     font-size: 54px;
 }
 
 h2{
     font-family: henriette;
     color: #545871;
-    margin: 0px;
+    margin:0;
     font-size: 48px;
 }
 
 h3{
     font-family: henriette;
     color: #545871;
-    margin: 0px;
+    margin:0;
     font-size: 36px;
 }
 
 h4{
     font-family: henriette;
     color: #545871;
-    margin: 0px;
+    margin:0;
     font-size: 24px;
 }
 
 p{
     font-family: bs;
-    margin: 0px;
+    margin:0;
     font-size: 24px;
+    color: #545871;
 }
 
+a{
+    color: #545871;
+    text-decoration: none;
+}
+
+/*Contenedores flex verticales y horizontales*/
+.flex-v{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-h{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Estilos de los botones*/
 button{
     width: 256px;
     height: 56px;
@@ -62,91 +86,146 @@ button{
     font-size: 20px;
     border: none;
     cursor: pointer;
+    color: white;
+    background-color: #545871;
+}
+
+button:hover{
+    background-color: #DADBE6;
+    color: #545871;
+}
+
+/*Botón rosado*/
+.pink-btn{
+    color: #545871;
+    background: #EBD0CE;
+}
+
+/*Botón blanco*/
+.white-btn{
+    color: #545871;
+    background-color: white;
 }
 
 
+/*Estilos de la primera sección*/
 #profile{
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
     overflow: hidden;
+    justify-content: space-around;
     background-image: url("./images/bg.png");
     background-size: cover;
-    background-position: center;
-}
-
-
-#introduction{
+    background-position: center center;
     color: white;
+}
+
+/*Caja que contiene los botones y la introducción de la página*/
+#introduction{
     width: 417px;
-    margin: 63px 128px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#navigation{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    
+    margin: 63px 128px 120px 0;
 }
 
 
-
+/*Estilos de los botones superiores*/
 .navigation-button{
     background: transparent;
     width: auto;
     color: white;
+    border-radius: 0;
 }
-
-#profile-visit-btn{
-    background: white;
-    margin-bottom: 120px;
-}
-
-#profile-visit-btn:hover{
-    background: #DADBE6;
-}
-
-
-#logo-name{
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    height: 64px;
-    align-items: center;
-    
-}
-
-#logo-name-ozzi{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 63px 128px;
-}
-
-#logo-name-ozzi p{
+.navigation-button:hover{
+    background: transparent;
     color: white;
 }
 
+/*División que contiene el logo, nombre de la empresa y nombre del perro*/
+#logo-name-ozzi{
+    width: 50%;
+    padding: 63px 0;
+}
+
+
+/*Contenedor del logo y nombre de la empresa*/
+#logo-name{
+    width: 50%;
+    height: 64px;
+    align-items: center;
+    justify-content: left;
+}
+
+/*Nombre de la empresa*/
 #name{
     margin-left: 15px;
     color: white;
 }
 
+/*Nombre del perro*/
+#logo-name-ozzi p{
+    color: white;
+}
+
+/*Estilos de la segunda sección*/
+#expert{
+    background: white;
+    width: 100%;
+    padding: 112px 0 109px;
+    justify-content: space-evenly;
+}
+
+/*Caja de texto de la segunda división*/
+#expert-text-box{
+    width: 480px;
+}
+
+/*Estilos de la tercera sección*/
+#services{
+    background: #F7ECEB;
+    width: 100%;
+    align-items: center;
+}
+
+/*Contenedor de imagen y nombre del perro*/
+#services-sidebar{
+    width: 51%;
+}
+
+/*Imagen de la segunda sección*/
+#services-image{
+    width: 100%;
+    display: block;
+}
+
+/*Nombre del perro*/
+#ollie{
+    color: white;
+    position: absolute;
+    font-size: 16px;
+    transform: translateX(99px) translateY(-111px);
+}
+
+/*Descripción de la sección*/
+#services-text-box{
+    width: 415px;
+    height: 461px;
+    margin: auto;
+}
+
+/*Estilos de la cuarta sección*/
 #pets{
     background: #545871;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     padding-top: 107px;
     padding-bottom: 112px;
 }
 
+/*Titulo de la sección*/
+#pets-title{
+    color: white;
+    margin-bottom: 62px;
+}
+
+/*Malla 2x2 para colocar las tarjetas de las mascotas*/
 #pets-gallery{
     background: #545871;
     width: 1152px;
@@ -155,36 +234,27 @@ button{
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     grid-gap: 64px;
+    margin-bottom: 53px;
 }
 
-#pets-title{
-    color: white;
-    margin-bottom: 30px;
-    font-family: henriette;
-    font-size: 48px;
-}
-
+/*Contenedor de la tarjeta de la mascota*/
 .pets-card{
     background: white;
     margin-top: 63px;
     padding: 32px;
     width: 480px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0px;
+    margin:0;
     border-radius: 9px;
 }
 
+/*Imagen de las mascotas*/
 .pets-card img{
     height: 160px;
 }
 
+/*Caja de texto de las mascotas*/
 .pets-card div{
     width: 290px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .pets-card p{
@@ -192,73 +262,70 @@ button{
     font-size: 20px;
 }
 
-#read-reviews{
-    margin-top: 45px;
-    color: #545871;
-    width: 256px;
-    height: 56px;
-    border-radius: 28px;
-    background: #EBD0CE;
-    font-family: "bs";
-    font-size: 20px;
-}
 
-#read-reviews:hover{
-    background: #DADBE6;
-}
-
-
-
-#expert{
+/*Estilos de la quinta sección*/
+#options{
     background: white;
-    width: 100%;
-    padding: 112px 0px 109px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-#services{
-    background: #F7ECEB;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    text-align: center;
+    padding-bottom: 120px;
 }
 
-#services-sidebar{
-    width: 51%;
+/*Contenedor de las tarjetas de opciones de servicios*/
+#options-gallery{
+    width: 1248px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 115px;
+    margin-bottom: 70px;
 }
 
-#services-text-box{
-    width: 415px;
-    height: 461px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/*Estilos de cada tarjeta*/
+.option-card{
+    width: 352px;
+    border: 1px solid #DADBE6;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Nombre del servicio*/
+#options-title{
+    width: 726px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+/*Icono superior de la tarjeta*/
+.icon{
+    transform: translateY(-50px);
+}
+
+/*Estilos de la descripción del servicio*/
+.option-card p{
+    width: 223px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/*Contenedor del precio del servicio*/
+.price{
+    width: 100%;
+    padding-top: 20px;
+    align-items: center;
+    background: #F0F1F7;
+    text-align: center;
+}
+
+.price p{
+    font-family: bsb;
+    font-size: 12px;
+    color: #9597A6;
 }
 
 
-#expert-text-box{
-    width: 480px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.schedule-visit{
-    color: white;
-    background: #545871;
-    margin-bottom: 10px;
-}
-
-.schedule-visit:hover{
-    background: #DADBE6;
-    color: #545871;
-}
-
+/*Estilos de la sección de contacto*/
 #contact{
     width:100%;
     background: #F7ECEB;
@@ -269,77 +336,7 @@ button{
     padding-bottom: 150px
 }
 
-#contact>*{
-    margin: 0px;
-    padding: 0px;
-}
-
+/*Titulo "Contacto"*/
 #contact-title{
     opacity: 0.3;
-    color: #545871;
-}
-
-#options{
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 120px;
-}
-
-#options-gallery{
-    width: 1248px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 115px;
-    margin-bottom: 70px;
-}
-
-
-#options-title{
-    width: 726px;
-    margin-top: 80px;
-    margin-bottom: 30px;
-}
-
-.icon{
-    transform: translateY(-50px);
-}
-
-
-#phone{
-    color: #545871;
-    text-decoration: none;
-}
-#email{
-    color: #545871;
-}
-
-.option{
-    width: 352px;
-    border: 1px solid #DADBE6;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.option p{
-    width: 223px;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.price{
-    width: 100%;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #F0F1F7;
-    text-align: center;
 }
